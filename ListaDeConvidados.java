@@ -1,11 +1,23 @@
+import java.util.ArrayList;
 
-public class ListaDeConvidados{
-     String lista[] = new String[3];
-     lista[0] = "Ana";
-     lista[1] = "Bruno";
-     lista[2] = "Fernando";
+public class ListaDeConvidados {
 
-     for (String convidado : lista){
-         System.out.println(convidado);
-     }
-}   
+    public void mostrarMensagem() {
+        System.out.println("Lista de Convidados da Festa!");
+    }
+
+    public void listarNomes(ArrayList<String> lista) {
+        for (String nome : lista) {
+            System.out.println(nome);
+        }
+    }
+
+    public boolean verificarConvidado(ArrayList<String> lista, String nomeProcurado) {
+        for (String nome : lista) {
+            if (nome.equalsIgnoreCase(nomeProcurado)) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
