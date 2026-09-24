@@ -4,7 +4,7 @@ public class Lista {
 
     public static void main(String[] args) {
 
-        // Criando a lista de convidados
+        
         ArrayList<String> convidados = new ArrayList<>();
 
         
